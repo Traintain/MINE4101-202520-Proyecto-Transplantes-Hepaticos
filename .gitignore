@@ -1,8 +1,0 @@
-# Ignorar todo
-*
-
-# Excepto este archivo específico
-!revisar_BD_trasplante_hepatico_rev2.ipynb
-
-# También permitir el propio .gitignore
-!.gitignore
