@@ -96,3 +96,5 @@ La ejecución tiene el siguiente orden: Primero se ejecuta el cuadernillo de lim
 Antes de la ejecución asegurarse de tener las librerias
 
 pandas numpy matplotlib seaborn scipy
+
+El dataset sera enviado por correo por confidencialidad, se debe subir a la carpeta ya que se usó rutas relativas.
