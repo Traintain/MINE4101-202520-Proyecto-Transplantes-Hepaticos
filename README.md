@@ -6,6 +6,7 @@ Presentado por:
 - Juan Manuel Rivera  - 201534131
 - Johana Alejandra Rátiva - 202513844
 
+[Video entrega 1](https://www.youtube.com/watch?v=HGR5D20y1rQ)
 
 # Objetivo
 
