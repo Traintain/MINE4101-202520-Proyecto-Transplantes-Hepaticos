@@ -6,6 +6,7 @@ Presentado por:
 - Juan Manuel Rivera  - 201534131
 - Johana Alejandra Rátiva - 202513844
 
+[Video entrega 1](https://www.youtube.com/watch?v=HGR5D20y1rQ)
 
 # Objetivo
 
@@ -96,3 +97,5 @@ La ejecución tiene el siguiente orden: Primero se ejecuta el cuadernillo de lim
 Antes de la ejecución asegurarse de tener las librerias
 
 pandas numpy matplotlib seaborn scipy
+
+El dataset sera enviado por correo por confidencialidad, se debe subir a la carpeta ya que se usó rutas relativas.
