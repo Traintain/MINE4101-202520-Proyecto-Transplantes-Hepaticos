@@ -88,6 +88,20 @@ En esta etapa se realizaron actividad de limpieza y preparacón de datos como ta
 
 # Conclusiones (insights)
 
+* La variable “¿Complicación?” requiere un proceso adicional de depuración y homologación antes de avanzar hacia la modelación predictiva, ya que presenta inconsistencias con variables complementarias como:
+Complejidad_asociada, #_de_complicaciones, arritmia_pop, falla_cardiaca, infección, rechazo_agudo, rechazo_cronico e infarto.
+Estas discrepancias pueden afectar la coherencia de los resultados y la validez del modelo.
+
+* Se evidencia que los pacientes que requieren soporte intraoperatorio tienden a presentar mayor frecuencia de complicaciones postoperatorias.
+Este comportamiento podría estar relacionado con el uso de hormonas vasoactivas como vasopresina y noradrenalina, las cuales —según la literatura— podrían estar asociadas con la aparición de complicaciones tras el trasplante.
+
+* Variables como Estadio y Grado_HCC muestran tendencias clínicas relevantes:
+
+* Los estadios tumorales más avanzados y los grados histológicos más altos presentan mayor proporción de complicaciones y aunque no resultaron estadísticamente significativas, estas variables tienen sentido clínico, dado que una menor diferenciación celular suele asociarse con mayor agresividad tumoral y, en consecuencia, mayor riesgo de complicaciones.
+
+* Dada la complejidad inherente a los datos clínicos, se recomienda continuar con análisis multivariados que permitan capturar la interacción entre variables y profundizar en la identificación de factores asociados a las complicaciones postoperatorias.
+
+
 # Instrucciones de ejecución
 
 La ejecución tiene el siguiente orden: Primero se ejecuta el cuadernillo de limpieza con el cual se obtendrá una sabana de datos limpia que será importada en el cuadernillo de Analisis exploratorio. En ambos cuadernillos se puede encontrar información relevante de la ejecución y interpretación de resultados. 
