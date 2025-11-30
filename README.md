@@ -11,7 +11,7 @@ Presentado por:
 2. Cuaderno limpieza de jupyter: Analisis_exploratorio_consolidado.ipynb
 3. Cuderno EDA en jupyter: EDA_BD_trasplante_hepatico_JDER.ipynb
 4. En la carpeta "Modelo de clasificación", se encuentra el cuaderno de los modelos y los archivos de la API
-5. Diccionario 
+5. Diccionario con el nombre: Diccionario_de_datos_txHepato.xlsx
 *Notas:* 
 - El dataset sera enviado por correo por confidencialidad, se debe subir a la carpeta ya que se usó rutas relativas.
 - El video entrega 2, se encuentra en la siguiente dirección: ()
