@@ -6,7 +6,13 @@ Presentado por:
 - Juan Manuel Rivera  - 201534131
 - Johana Alejandra Rátiva - 202513844
 
-[Video entrega 1](https://www.youtube.com/watch?v=HGR5D20y1rQ)
+# En el repositorio se encuentra:
+1. Informe ejecutivo con el nombre: 
+2. Cuaderno de jupyter: 
+
+*Notas:* 
+- El dataset sera enviado por correo por confidencialidad, se debe subir a la carpeta ya que se usó rutas relativas.
+- El video entrega 2, se encuentra en la siguiente dirección: ()
 
 # Objetivo
 
@@ -112,4 +118,4 @@ Antes de la ejecución asegurarse de tener las librerias
 
 pandas numpy matplotlib seaborn scipy
 
-El dataset sera enviado por correo por confidencialidad, se debe subir a la carpeta ya que se usó rutas relativas.
+
