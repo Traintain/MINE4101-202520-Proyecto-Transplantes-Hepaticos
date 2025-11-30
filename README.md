@@ -8,8 +8,9 @@ Presentado por:
 
 # En el repositorio se encuentra:
 1. Informe ejecutivo con el nombre: 
-2. Cuaderno de jupyter: 
-
+2. Cuaderno limpieza de jupyter: Analisis_exploratorio_consolidado.ipynb
+3. Cuderno EDA en jupyter: EDA_BD_trasplante_hepatico_JDER.ipynb
+4. 
 *Notas:* 
 - El dataset sera enviado por correo por confidencialidad, se debe subir a la carpeta ya que se usó rutas relativas.
 - El video entrega 2, se encuentra en la siguiente dirección: ()
