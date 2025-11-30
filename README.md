@@ -18,14 +18,13 @@ Presentado por:
 
 # Objetivo
 
-El objetivo de este proyecto es explorar el dataset de datos clinicos de trasplantes hepaticos de la Fundación Santa Fe de Bogotá que cuenta con 736 registros y 286 varaibles. A partir de esta exploración se busca generar una base de datos limpia que permita el desarrollo de un tablero de control en Power BI que apoye la generación de reportes, la investigación clinica y mejore la toma de decisiones clinicas a partir de una comprensión mas clara del estado del paciente y sus posibles complicaciones postrasplante. Para ello se hará uso de la metodología ASUM-DM, analisis exploratorio y se implementará clasificación supervisada a partir de  una regresión logistica.   
+El objetivo de este proyecto es explorar el dataset de datos clinicos de trasplantes hepaticos de la Fundación Santa Fe de Bogotá que cuenta con 736 registros y 286 varaibles. A partir de esta exploración se busca generar una base de datos limpia que permita el desarrollo de un tablero de control en Power BI que apoye la generación de reportes, la investigación clinica y mejore la toma de decisiones clinicas a partir de una comprensión mas clara del estado del paciente y sus posibles complicaciones postrasplante. Para ello se hará uso de la metodología ASUM-DM, analisis exploratorio y se implementará clasificación supervisada a partir de un algoritmo de random forest.   
 
 
 # Alcance
 
-EL siguiente proyecto de ciencia de datos hace uso de la metodología ASUM-DM, en esta primera entrega se llevan a cabo las fases: Comprensión del negocio, enfoque analítico, requisitos de los datos y comprensión y preparación de los datos. A continuación, se muestra el flujo de ejecución junto con las actividades realizadas en cada una de ellas.
+EL siguiente proyecto de ciencia de datos hace uso de la metodología ASUM-DM, para esta entrega se abordaron las etapas de comprensión del negocio, enfoque analitico, recopilación y comprensión de los datos, preparación de los datos, modelado y evaluación del modelo, finalmente se propone una implementación de este mediante una API. 
 
-![ Metodología ASUM-DM ](./metodologia.png)
 
 ## Fase 1: Comprensión del negocio
 
@@ -36,12 +35,14 @@ La Fundación Santa Fe de Bogotá cuenta con un servicio de cirugía hepatobilia
 * Apoyar la toma de decisiones clínicas mediante una comprensión más clara del estado del paciente y sus posibles complicaciones postrasplante. <br/>
 * Impulsar la investigación clínica al permitir el análisis de supervivencia y otros indicadores como factores de riesgo por grupos poblacionales o por año de trasplante.
 
-Para evaluar el impacto de este proyecto de ciencia de datos se usarán los siguientes KPIs (Indicador clave de desempeño): <br/>
-* Porcentaje de datos no nulos: medir el porcentaje de mejora en la completitud y calidad de los datos, incentivando una captura más limpia en futuras iteraciones a partir del uso de diccionarios de datos.<br/>  
-* Tiempo promedio de depuración de los datos: Medir el tiempo pre y pos desarrollo del dashboard, respecto a la duración del proceso de limpieza/estandarización de la data. <br/>
-* Tiempo promedio de entendimiento del estado del paciente: Medir el tiempo promedio en el que se pueden entender los datos del paciente, ya que la herramienta facilita la lectura integral de un caso clínico a través de un perfil dinámico que reúne variables significativas 8pre y pos desarrollo de la herramienta. <br/>
-* Número de hipótesis o estudios derivados: cuantificar el aporte del análisis exploratorio y del dashboard en la investigación clínica a partir de la participación en eventos de investigación (abstracts enviados, manuscritos sometidos/publicados) y generación de nuevas líneas o proyectos de investigación clínica. <br/>
-* Frecuencia de uso de los datos: medir el aumento del acceso y aprovechamiento de la información consolidada, antes subutilizada por su complejidad y volumen.
+Con la implementación de estre proyecto de datos se busca mejorar los KPIS de negocio
+
+* Crecimiento anual en el numero de trasplantes. <br/> 
+* Reducción del tiempo Fast Track. <br/>
+* Disminución de la tasa de mortalidad postoperatoria. <br/>
+* Reducción del tiempo de elaboración de reportes clinicos <br/>
+* Aumento de la productividad cientrifica <br/>
+
 
 ## Fase 2: Enfoque analítico
 
@@ -65,13 +66,11 @@ Nota: Se anexa el acuerdo de confidencialidad firmado por las partes, el cual re
 
 ### Enfoque analítico
 
-El análisis se centra en explorar y modelar los factores asociados a la presencia de complicaciones postoperatorias (variable dependiente depurada para garantizar consistencia).
+El análisis se guía por tres preguntas de negocio principales: ¿Qué factores clínicos y demográficos se asocian con un mayor riesgo de complicación postoperatoria?
+A partir de esta pregunta, se plantean hipótesis que sugieren que variables como edad, estadio del tumor, antecedentes de consumo (tabaquismo o alcohol), marcadores bioquímicos como la alfa-fetoproteína, obesidad, entre otras, pueden influir significativamente en la probabilidad de complicación. 
+Se propone un enfoque analítico mixto que combina técnicas estadísticas y de visualización para caracterizar el panorama clínico, junto con modelos de machine learning supervisado para predecir complicaciones, experimentando con cuatro algoritmos: Regresión Logística, Random Forest, Árboles de Decisión y AdaBoost. Cada modelo será entrenado mediante búsqueda de hiperparámetros con GridSearchCV y validación cruzada estratificada.
+La métrica principal para seleccionar el mejor modelo será el F1-score ponderado, dado que permite equilibrar precisión y recall en un contexto con desbalance de clases, maximizando la correcta identificación de pacientes con complicación sin incrementar excesivamente los falsos positivos. Adicionalmente se reportarán métricas complementarias como accuracy, precisión, recall y matriz de confusión, para evaluar la solidez y capacidad de cada modelo.
 
-Primero, se realiza un Análisis Exploratorio de Datos (EDA) para identificar patrones, distribuciones y posibles relaciones entre variables clínicas y quirúrgicas. Luego, se aplica una Regresión Logística para estimar la probabilidad de complicación a partir de las variables más relevantes.
-
-Las hipótesis se orientan a determinar si características como la edad, el estadio del tumor o marcadores bioquímicos influyen significativamente en el riesgo de complicación.
-
-El modelo se evaluará con métricas de desempeño como exactitud (accuracy), precisión, y recall , con el fin de medir su capacidad predictiva y su validez estadística.
 
 ## Fase 3: Requisitos de datos
 
@@ -90,9 +89,34 @@ A continuación se muestra el resultado de la estrategia de priorización de dat
 
 Nota: Adjunto al repositorio se encuentra el diccionario de datos detallado.
 
-## Fase 4: Comprensión y preparación de dato
+## Fase 4: Comprensión de los datos
 
 En esta etapa se realizaron actividad de limpieza y preparacón de datos como también analisis exploratorio univaraido y bivariado, los resultados se pueden encontrar en los cuadernillos adjuntos de limpieza de datos y EDA. 
+
+## Fase 5: Preparación de los datos 
+
+A partir del dataset original se aplicó una limpieza inicial que incluyó la estandarización de NaN, corrección de tipos de datos y depuración de rangos clínicos clave (p. ej., MELD ≤ 40, Child-Pugh a formato ordinal y filtros válidos para Causa_Tx_Renal y BMI). Además, se homogenizaron variables clínicas binarias para garantizar valores verdaderamente booleanos. (Enfermedad_Coronaria_Pre_Tx, Falla_Cardiaca_Pre_Tx, Infarto_Cardiaco_Pre_Tx, Diabetes_Mellitus_Pre_Tx, Hipertensión_Arterial_Pre_Tx, entre otros)
+Con este dataset correctamente depurado se inició la etapa de preparación para el modelado, siguiendo estos pasos:
+1.	Imputación de la variable ¿Complicación? A partir de: Tipo de complicaciones, infección posoperatoria,  Arritmia posoperatoria, Falla cardiaca, Infarto, # de complicaciones.
+2.	Selección inicial de variables según su tipo (numéricas, booleanas y ordinales), priorizando únicamente aquellas que ya no requerían procesos adicionales de limpieza. Esto conformó un dataframe base df_model con 70 características.
+3.	Procesamiento de variables categóricas, aplicando OneHotEncoder o MultiLabelBinarizer según correspondiera. Luego de integrarlas a df_model se obtuvieron 173 columnas.
+4.	Filtro por porcentaje de no nulidad, aplicando un umbral mínimo del 16% para excluir columnas con demasiados valores faltantes.
+Se obtuvo df_filtered con 143 columnas.
+5.	Eliminación de filas completamente nulas, conservando únicamente registros con información útil. El resultado final fue un dataframe df_filtered con 466 filas y 143 columnas.
+Este dataframe constituye la base final para el modelado y fue dividido en un 70% para entrenamiento y 30% para prueba.
+
+
+## Fase 6: Estrategia de validación y selección de modelo
+
+Para seleccionar el mejor, se implementó una estrategia de experimentación basada en validación cruzada estratificada de 5 folds, garantizando que cada partición mantuviera la proporción original de clases. Sobre esta estructura se aplicó una búsqueda de hiperparámetros mediante GridSearchCV evaluando 4 algoritmos (regresión logística, random forest, árboles de decisión y Adaboost) a partir de grillas específicas para cada modelo. La métrica empleada para comparar configuraciones fue el F1-score ponderado (F1_weighted), seleccionada por priorizar la identificación de pacientes con complicación sin incrementar excesivamente las predicciones de complicación a pacientes que realmente no la presentaron.
+
+## Fase 7 Construcción y evaluación del modelo
+
+El algoritmo Random Forest obtuvo el mejor desempeño, alcanzando un F1-Score ponderado de 69,3%.
+Al analizar la matriz de confusión correspondiente a la muestra de 140 pacientes, se observa que el modelo logró identificar correctamente 59 de los 81 pacientes que sí presentaron complicaciones, lo que equivale a un recall del 73%, es decir, capturó la mayoría de los casos reales positivos.
+Por otro lado, el modelo clasificó como complicados a 21 pacientes que en realidad no presentaron complicaciones, lo cual se refleja en una precisión del 74%, indicando que tres de cada cuatro predicciones positivas fueron correctas.
+En conjunto, estos resultados muestran que Random Forest ofrece un equilibrio adecuado entre sensibilidad y precisión, siendo el algoritmo con mejor capacidad predictiva para este caso. 
+
 
 # Conclusiones (insights)
 
