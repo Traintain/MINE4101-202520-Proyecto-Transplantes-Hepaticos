@@ -139,7 +139,7 @@ Este comportamiento podría estar relacionado con el uso de hormonas vasoactivas
 
 # Instrucciones de ejecución
 
-La ejecución tiene el siguiente orden: Primero se ejecuta el cuadernillo de limpieza con el cual se obtendrá una sabana de datos limpia que será importada en el cuadernillo de Analisis exploratorio. En ambos cuadernillos se puede encontrar información relevante de la ejecución y interpretación de resultados. 
+La ejecución tiene el siguiente orden: Primero se ejecuta el cuadernillo de limpieza con el cual se obtendrá una sabana de datos limpia que será importada en el cuadernillo de Analisis exploratorio. En ambos cuadernillos se puede encontrar información relevante de la ejecución y interpretación de resultados. Para el caso de los ML y Power BI, en cada carpeta están sus instrucciones de ejecución.
 
 # Dependencias
 
