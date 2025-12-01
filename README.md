@@ -144,6 +144,7 @@ La ejecución tiene el siguiente orden: Primero se ejecuta el cuadernillo de lim
 
 Antes de la ejecución asegurarse de tener las librerias
 
-pandas numpy matplotlib seaborn scipy
+pandas numpy matplotlib seaborn scipy scikit-learn joblib lime shap
+
 
 
