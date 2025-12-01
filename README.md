@@ -1,4 +1,4 @@
-# MINE4213-Taller2
+# MINE4213-Final
 Presentado por:
 
 - Lina Maria Bejarano - 
