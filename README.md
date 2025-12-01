@@ -7,11 +7,13 @@ Presentado por:
 - Johana Alejandra Rátiva - 202513844
 
 # En el repositorio se encuentra:
-1. Informe ejecutivo con el nombre: 
-2. Cuaderno limpieza de jupyter: Analisis_exploratorio_consolidado.ipynb
-3. Cuderno EDA en jupyter: EDA_BD_trasplante_hepatico_JDER.ipynb
-4. En la carpeta "Modelo de clasificación", se encuentra el cuaderno de los modelos y los archivos de la API
-5. Diccionario con el nombre: Diccionario_de_datos_txHepato.xlsx
+1. Informe ejecutivo con el nombre:
+2. Presentación con el nombre: Proyecto-Ciencia-de-Datos-Aplicada_ENTREGA2.pdf
+3. Cuaderno limpieza consolidado de jupyter: Analisis_exploratorio_consolidado.ipynb
+4. Cuderno consolidado del EDA en jupyter: EDA_BD_trasplante_hepatico_JDER.ipynb
+5. En la carpeta EDAs están los análisis individuales por cada integrante del grupo.
+6. En la carpeta "Modelo de clasificación", se encuentra el cuaderno de los modelos y los archivos de la API
+7. Diccionario con el nombre: Diccionario_de_datos_txHepato.xlsx
 *Notas:* 
 - El dataset sera enviado por correo por confidencialidad, se debe subir a la carpeta ya que se usó rutas relativas.
 - El video entrega 2, se encuentra en la siguiente dirección: ()
