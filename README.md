@@ -17,7 +17,7 @@ Presentado por:
    
 **Notas:** 
 - El dataset sera enviado por correo por confidencialidad, se debe subir a la carpeta ya que se usó rutas relativas.
-- El video entrega 2, se encuentra en la siguiente dirección: ()
+- El video entrega 2, se encuentra en la siguiente dirección: [Video 2](https://youtu.be/huUyG3ejCTM)
 
 # Objetivo
 
