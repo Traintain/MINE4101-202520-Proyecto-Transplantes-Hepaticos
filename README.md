@@ -14,7 +14,8 @@ Presentado por:
 5. En la carpeta EDAs están los análisis individuales por cada integrante del grupo.
 6. En la carpeta "Modelo de clasificación", se encuentra el cuaderno de los modelos y los archivos de la API
 7. Diccionario con el nombre: Diccionario_de_datos_txHepato.xlsx
-*Notas:* 
+   
+**Notas:** 
 - El dataset sera enviado por correo por confidencialidad, se debe subir a la carpeta ya que se usó rutas relativas.
 - El video entrega 2, se encuentra en la siguiente dirección: ()
 
