@@ -13,7 +13,8 @@ Presentado por:
 4. Cuderno consolidado del EDA en jupyter: EDA_BD_trasplante_hepatico_JDER.ipynb
 5. En la carpeta EDAs están los análisis individuales por cada integrante del grupo.
 6. En la carpeta "Modelo de clasificación", se encuentra el cuaderno de los modelos y los archivos de la API
-7. Diccionario con el nombre: Diccionario_de_datos_txHepato.xlsx
+7. En la carpeta "power", se encuentra el cuaderno de los modelos y los archivos de la API
+8. Diccionario con el nombre: Diccionario_de_datos_txHepato.xlsx
    
 **Notas:** 
 - El dataset sera enviado por correo por confidencialidad, se debe subir a la carpeta ya que se usó rutas relativas.
