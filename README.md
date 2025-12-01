@@ -7,7 +7,7 @@ Presentado por:
 - Johana Alejandra Rátiva - 202513844
 
 # En el repositorio se encuentra:
-1. Informe ejecutivo con el nombre:
+1. Informe ejecutivo con el nombre: Proyecto_final_CD_entrega2.pdf
 2. Presentación con el nombre: Proyecto-Ciencia-de-Datos-Aplicada_ENTREGA2.pdf
 3. Cuaderno limpieza consolidado de jupyter: Analisis_exploratorio_consolidado.ipynb
 4. Cuderno consolidado del EDA en jupyter: EDA_BD_trasplante_hepatico_JDER.ipynb
