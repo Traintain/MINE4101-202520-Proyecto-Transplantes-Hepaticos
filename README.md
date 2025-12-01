@@ -1,8 +1,8 @@
 # MINE4213-Final
 Presentado por:
 
-- Lina Maria Bejarano - 
-- Juan Diego Enríquez - 
+- Lina Maria Bejarano - 202410020
+- Juan Diego Enríquez - 202425450
 - Juan Manuel Rivera  - 201534131
 - Johana Alejandra Rátiva - 202513844
 
