@@ -1,4 +1,4 @@
-* Dashboard (Power BI) *
+# Dashboard (Power BI) 
 
 El dashboard se realizó empleando Power BI, enlazado con un script de Python que permitió hacer la limpieza y la codificación de las variables necesarias para realizar el reporte. Este reporte se divide en tres hojas principales: Panorama general, panoramas y supervivencia poblacional. 
 
@@ -14,12 +14,13 @@ Indicaciones: Al abrir el Power BI, ir archivo > opciones y configuraciones > op
 
 Adicional a esto, es necesario actualizar las rutas a la carpeta donde está el Power BI, dado que de lo contrario no permitirá actualizar.  
 
-Ruta: Transformar Datos > Escoger tabla > Source  y actualizar el path en el codigo que aparece en la pestaña. 
+*Ruta:* Transformar Datos > Escoger tabla > Source  y actualizar el path en el codigo que aparece en la pestaña. 
 
 Esta carpeta de BI, contiene todo lo necesario para ejecutar de manera local el proyecto. Contiene: Dashboard, Data, Scripts.
 En dashboard esta presente el documento BI, que va a permitir visualizar el proyecto. Se incluyen además las imágenes del BI.
 En Data se encuentran dos carpetas, Raw y Processed, en Raw, se encuentra la data cruda y en la segunda la data procesada.
 Finalmente, en scripts, están los códigos python necesarios para el procesamiento de la data (Transplante_Hepatico) y en Calendar el necesario para incluir un calendario en BI, que permitiera visualizar las fechas. 
+
 
 
 
